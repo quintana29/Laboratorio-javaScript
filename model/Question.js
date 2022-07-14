@@ -21,5 +21,4 @@ export class Question {
         return option === this.answer
     }
 }
-const questions = new Question('1','asdfer','[1234,3456,456]','3');
-console.log(questions.compareAnswer('3'));
+
