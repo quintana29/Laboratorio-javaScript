@@ -9,7 +9,7 @@ export const category1 = [
             'Paradigma donde la ejecución se lee de forma estructurada.',
             'Ninguna de las anteriores.'
         ],
-        answer: '0'
+        answer: 'Paradigma de programación que facilita la reutilización y mantenimiento del código.'
     },
     {
         category: '1',
@@ -20,7 +20,7 @@ export const category1 = [
             'Palabra reservada var',
             'Instanciar la clase'
         ],
-        answer: '0'
+        answer: 'Espacio de almacenamiento dentro de la memoria del computador..'
     },
     {
         category: '1',
@@ -31,7 +31,7 @@ export const category1 = [
             'Genera un numero aleatorio.',
             'Heredar parámetros a una subclase'
         ],
-        answer: '1'
+        answer: 'Invocar el constructor de la clase.'
     },
     {
         category: '1',
@@ -42,7 +42,7 @@ export const category1 = [
             'Mostrar un título.',
             'lmacenar la dirección de una imagen.'
         ],
-        answer: '2'
+        answer: 'Mostrar un título.'
     },
     {
         category: '1',
@@ -53,7 +53,7 @@ export const category1 = [
             '1 y 2 son correctas.',
             'Ninguna de las anteriores.'
         ],
-        answer: '0'
+        answer: 'Sistema manejador de bases de datos.'
     },
 
 ];
@@ -67,7 +67,7 @@ export const category2 = [
             '1995.',
             '2000.'
         ],
-        answer: '2'
+        answer: '1995.'
     },
     {
         category: '2',
@@ -78,7 +78,7 @@ export const category2 = [
             'Cascading Style sale',
             'Todas las anteriores.'
         ],
-        answer: '0'
+        answer: 'Cascading Style Sheets.'
     },
     {
         category: '2',
@@ -89,7 +89,7 @@ export const category2 = [
             'Almacenar información en variables.',
             'Palabras claves sin sintaxis'
         ],
-        answer: '0'
+        answer: 'Conjunto de instrucciones para comunicar al programador con la máquina'
     },
     {
         category: '2',
@@ -100,7 +100,7 @@ export const category2 = [
             'Lenguaje que facilita el trabajo del programador.',
             'Utiliza un intérprete'
         ],
-        answer: '0'
+        answer: 'Ceros y unos ejecutados por el compilador.'
     },
     {
         category: '2',
@@ -111,7 +111,7 @@ export const category2 = [
             'Lenguaje que utiliza instrucciones más fáciles de entender.',
             'Todas las anteriores.'
         ],
-        answer: '1'
+        answer: 'Lenguaje muy cercano al utilizado por los humanos.'
     },
 ];
 export const category3 = [
@@ -124,7 +124,7 @@ export const category3 = [
             'Definir clases a partir de objetos.',
             'Concepto de POO que utiliza la palabra DISTINCT.'
         ],
-        answer: '1'
+        answer: 'Definir clases basadas en otras ya existentes.'
     },
     {
         category: '3',
@@ -135,7 +135,7 @@ export const category3 = [
             'Abstractas.',
             'Extends'
         ],
-        answer: '3'
+        answer: 'Extends'
     },
     {
         category: '3',
@@ -143,10 +143,10 @@ export const category3 = [
         option: [
             'Se utiliza para comunicar dos clases abstractas.',
             'Se emplea para validar los parámetros de salida de un método con retorno.',
-            'Para generar una inicialización de nuevos objetos..',
+            'Para generar una inicialización de nuevos objetos.',
             'Todas las anteriores.'
         ],
-        answer: '2'
+        answer: 'Para generar una inicialización de nuevos objetos.'
     },
     {
         category: '3',
@@ -157,7 +157,7 @@ export const category3 = [
             'Los que disponga el programador.',
             'Todas las anteriores.'
         ],
-        answer: '3'
+        answer: 'Todas las anteriores.'
     },
     {
         category: '3',
@@ -168,7 +168,7 @@ export const category3 = [
             'Angular, NodeJS',
             'SQL, PHP, JSP.'
         ],
-        answer: '0'
+        answer: 'Java, C# y Python.'
     },
 ];
 export const category4 = [
@@ -181,7 +181,7 @@ export const category4 = [
             'elect e.id from empleado e.',
             'Select nombre empleado where id = 2.'
         ],
-        answer: '1'
+        answer: 'Select * from empleado'
     },
     {
         category: '4',
@@ -192,7 +192,7 @@ export const category4 = [
             'Bases de datos relacionales.',
             'Bases de datos NoSQL'
         ],
-        answer: '1'
+        answer: 'Bases de datos jerárquicas.'
     },
     {
         category: '4',
@@ -203,7 +203,7 @@ export const category4 = [
             'Conexión.',
             'Echo conectar'
         ],
-        answer: '1'
+        answer: 'PDO'
     },
     {
         category: '4',
@@ -214,7 +214,7 @@ export const category4 = [
             'Select  * from empleado inner  nomina.',
             'Ninguna de las anteriores.'
         ],
-        answer: '3'
+        answer: 'Ninguna de las anteriores.'
     },
     {
         category: '4',
@@ -225,7 +225,7 @@ export const category4 = [
             'Header.',
             'Base:.'
         ],
-        answer: '0'
+        answer: 'Include(‘clase/empleado.php’).'
     },
 ]
 export const category5 = [
@@ -238,7 +238,7 @@ export const category5 = [
             '4.',
             '12'
         ],
-        answer: '1'
+        answer: '8.'
     },
     {
         category: '5',
@@ -249,7 +249,7 @@ export const category5 = [
             '60',
             '20'
         ],
-        answer: '2'
+        answer: '60'
     },
     {
         category: '5',
@@ -260,7 +260,7 @@ export const category5 = [
             'Segregación de la interfaz.',
             'Clases con múltiples responsabilidades'
         ],
-        answer: '3'
+        answer: 'Clases con múltiples responsabilidades'
     },
     {
         category: '4',
@@ -271,17 +271,17 @@ export const category5 = [
             'Ejecutar una instrucción si se cumple la sentencia',
             'Todas las anteriores'
         ],
-        answer: '2'
+        answer: 'Ejecutar una instrucción si se cumple la sentencia'
     },
     {
         category: '4',
-        question: 'El siguiente comando SQL” ALTER TABLE actor ADD FOREIGN KEY (id) REFERENCES  pelicula(id); ” permite:',
+        question: 'El siguiente comando SQL” ALTER TABLE pelicula ADD FOREIGN KEY (id) REFERENCES  pelicula(id); ” permite:',
         option: [
             'Alterar la tabla película.',
             'Alterar la tabla actor.',
             'Crear una relación entre ambas tablas por medio de una FK',
             'Ninguna de las anteriores.'
         ],
-        answer: '0'
+        answer: 'Alterar la tabla película.'
     },
 ];
