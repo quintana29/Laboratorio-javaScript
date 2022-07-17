@@ -10,20 +10,20 @@ export const questionView = () => {
     questionContainer.id = "containerQuestion";
 
     const keyDescription = document.createElement("h2");
-    keyDescription.classList.add("keys-row");
+    keyDescription.classList.add("tittle-keys");
     keyDescription.id = "description";
-    keyDescription.innerText = "Descripcion general de las preguntas";
+    keyDescription.innerText = "JUEGO DE PREGUNTAS";
 
     
     const keyTittle = document.createElement("h2");
-    keyTittle.classList.add("keys-row");
+    keyTittle.classList.add("tittle-keys");
     keyTittle.id = "question";
-    keyTittle.textContent = "INICIO";
+    keyTittle.textContent = "Seleccione la opción que considere correcta:";
     
     let scoreRow = document.createElement("div");
     scoreRow.classList.add("tittle-keys","score");
     scoreRow.id = "score"
-    scoreRow.append(keyDescription)
+    scoreRow.append(keyDescription,keyTittle)
    
    
 
@@ -33,11 +33,11 @@ export const questionView = () => {
 
     
 
-    questionRow.append(keyTittle);
+    //questionRow.append(keyTittle);
   
     questionContainer.append(questionRow);
     
-    container.append(scoreRow, questionContainer);
+    container.append(scoreRow,questionContainer);
     
     main();
 

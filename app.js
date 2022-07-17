@@ -42,6 +42,7 @@ const render = (ronda) => {
             break;
         case 6:
             console.log(points)
+            window.alert("Puntaje acumulado"+points);
             const name = window.prompt("Ingrese el nombre para su registro",0);
             const player = new Player(name,points);
             const rand = name+(Math.random() + 1).toString(36).substring(7);
