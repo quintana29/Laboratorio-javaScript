@@ -9,7 +9,12 @@ export const questionView = () => {
     questionContainer.classList.add("quiz-container","containerQuestion");
     questionContainer.id = "containerQuestion";
 
+    const keyDescription = document.createElement("h2");
+    keyDescription.classList.add("keys-row");
+    keyDescription.id = "description";
+    keyDescription.innerText = "Descripcion general de las preguntas";
 
+    
     const keyTittle = document.createElement("h2");
     keyTittle.classList.add("keys-row");
     keyTittle.id = "question";
@@ -18,16 +23,10 @@ export const questionView = () => {
     let scoreRow = document.createElement("div");
     scoreRow.classList.add("tittle-keys","score");
     scoreRow.id = "score"
+    scoreRow.append(keyDescription)
+   
    
 
-    let keyCategory = document.createElement("h3");
-    keyCategory.classList.add("keys-row","score-key");
-    keyCategory.id = "escore";
-    keyCategory.textContent = "Hola mundo";
-
-    
-   
-    scoreRow.appendChild(keyCategory)
     let questionRow = document.createElement("div");
     questionRow.classList.add("tittle-keys","listBtn");
     questionRow.id = "listBtn"
@@ -35,10 +34,10 @@ export const questionView = () => {
     
 
     questionRow.append(keyTittle);
-
-    questionContainer.append(questionRow, scoreRow);
+  
+    questionContainer.append(questionRow);
     
-    container.append(questionContainer);
+    container.append(scoreRow, questionContainer);
     
     main();
 

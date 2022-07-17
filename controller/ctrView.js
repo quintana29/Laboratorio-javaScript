@@ -2,10 +2,10 @@ import { Check } from "/model/Check.js";
 import {validarRespuesta} from '/app.js'
 export class ctrView {
 
-    constructor(){}
+    constructor(){ }
     
     printOptions(options, response){
-        const container = document.querySelector("#container");
+        
         let questionContainer = document.querySelector("#containerQuestion");
         const keyContainer = document.createElement("div");
         keyContainer.id = "containerButton"
@@ -35,9 +35,4 @@ export class ctrView {
         score.textContent = messages;
     }
 
-    clearView(){
-        const questionContainer = document.querySelector("#containerQuestion");
-        questionContainer = " ";
-          
-    }
 }

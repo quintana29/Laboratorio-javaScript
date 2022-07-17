@@ -10,7 +10,7 @@ let ronda = 1;
 let points = 0;
 
 const render = (ronda) => {
-    let randon = Math.floor((Math.random() * (5 - 1 + 1)) + 1);
+    let randon = Math.floor((Math.random() * (5 - 1 - 1)) + 1);
     switch (ronda) {
         case 2:
             const quiz2 = new Check(objQuestion2);
@@ -41,14 +41,26 @@ const render = (ronda) => {
             view5.printOptions(quiz5.question[randon].options, quiz5.question[randon].answer);
             break;
         case 6:
+            console.log(points)
             const name = window.prompt("Ingrese el nombre para su registro",0);
+            const player = new Player(name,points);
+            const rand = name+(Math.random() + 1).toString(36).substring(7);
+            const ctrPlayers = new ctrPlayer(player);
+            ctrPlayers.savePlayer(rand);
+            window.alert("Su registro fue guradado con exito");
+            location.href = "/index.html";
             break
+        default:
+            points = 0;
+            window.alert("");
+            location.href = "/index.html";
+                break
     }
 
 };
 export const main = (_event) => {
 
-    let randon = Math.floor((Math.random() * (5 - 1 + 1)) + 1);
+    let randon = Math.floor((Math.random() * (5 - 1 - 1)) + 1);
     if (ronda === 1) {
         const quiz = new Check(objQuestion1);
         const view = new ctrView();
@@ -64,9 +76,7 @@ export const validarRespuesta = (option, response) => {
         points += 25;
         ronda += 1
         const view = new ctrView();
-        //view.printScore(points);
         render(ronda)
-        console.log(points);
     }else{
         points = 0;
         window.alert("Respuesta incorrecta, volver a intentar");

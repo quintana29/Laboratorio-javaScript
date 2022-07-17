@@ -1,5 +1,5 @@
 //@ts-check
-import { Player } from "/model/Player.js";
+import { Player } from '/model/Player.js';
 
 export class ctrPlayer{
 
@@ -8,7 +8,7 @@ export class ctrPlayer{
         this.player = Player;
     }
 
-    savePlayer(){
-        localStorage.setItem("Player", JSON.stringify(this.player) )
+    savePlayer(key){
+    localStorage.setItem(key, JSON.stringify(this.player) )
     }
 }

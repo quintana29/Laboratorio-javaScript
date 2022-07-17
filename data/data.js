@@ -192,7 +192,7 @@ export const category4 = [
             'Bases de datos relacionales.',
             'Bases de datos NoSQL'
         ],
-        answer: 'Bases de datos jerárquicas.'
+        answer: 'Bases de datos NoSQL'
     },
     {
         category: '4',
