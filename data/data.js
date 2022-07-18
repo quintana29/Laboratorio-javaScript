@@ -1,4 +1,7 @@
-
+/**
+ * @ Esta clase contiene las preguntas distribuidas por categorias,
+ * con sus respectivos atributos, todo en formato Json
+ */
 export const category1 = [
     {
         category: '1',

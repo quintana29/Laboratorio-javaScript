@@ -1,9 +1,11 @@
 import {main}from '../app.js'
+/**
+ * @ Esta funcion me permite generar una vista en el DOM utilizando 
+ * variables de javaScript
+ */
 export const questionView = () => {
    
-
     const container = document.querySelector("#container");
-
 
     const questionContainer = document.createElement("div");
     questionContainer.classList.add("quiz-container","containerQuestion");
@@ -14,7 +16,6 @@ export const questionView = () => {
     keyDescription.id = "description";
     keyDescription.innerText = "JUEGO DE PREGUNTAS";
 
-    
     const keyTittle = document.createElement("h2");
     keyTittle.classList.add("tittle-keys");
     keyTittle.id = "question";
@@ -25,15 +26,11 @@ export const questionView = () => {
     scoreRow.id = "score"
     scoreRow.append(keyDescription,keyTittle)
    
-   
 
     let questionRow = document.createElement("div");
     questionRow.classList.add("tittle-keys","listBtn");
     questionRow.id = "listBtn"
 
-    
-
-    //questionRow.append(keyTittle);
   
     questionContainer.append(questionRow);
     

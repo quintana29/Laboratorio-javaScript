@@ -8,7 +8,13 @@ import {ctrPlayer} from '/controller/ctrPlayer.js'
 
 let ronda = 1;
 let points = 0;
-
+/**
+ * Esta funcion permite iterar y controlar la ronda en la que se encuentra 
+ * el juego, mostrando por pantalla las preguntas que son generadas de manera aleatoria,
+ * se distribuye en casos y cada caso representa una ronda o categoria
+ * @param {Integer} ronda Esta variable almacena la ronda actual 
+ * en la que se encuentra el juego, permitiendo llevar un control de las iteraciones
+ */
 const render = (ronda) => {
     let randon = Math.floor((Math.random() * (5 - 1 - 1)) + 1);
     switch (ronda) {
@@ -59,6 +65,12 @@ const render = (ronda) => {
     }
 
 };
+/**
+ * Esta funcion me renderiza desde la vista,
+ * para iniciar la ejecución y procesamiento de datos,
+ * La funcion crea objetos para conectar con la parte visual
+ * @param {event} _event Esta variable se escribe pero no se usa
+ */
 export const main = (_event) => {
 
     let randon = Math.floor((Math.random() * (5 - 1 - 1)) + 1);
@@ -70,13 +82,18 @@ export const main = (_event) => {
 
     }
 }
+/**
+ * Esta funcion permite validar si la respuesta que selecciono el usuario
+ * es la correcta, tambien permite aumentar la ronda y los puntos o reiniciar el juego
+ * @param {String} option Variable que almacena la opción elegida por el usuario
+ * @param {String} response Variable que almacena la respuesta a la pregunta
+ */
 export const validarRespuesta = (option, response) => {
 
     if (option === response) {
 
         points += 25;
-        ronda += 1
-        const view = new ctrView();
+        ronda += 1;
         render(ronda)
     }else{
         points = 0;
